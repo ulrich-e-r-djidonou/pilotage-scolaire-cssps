@@ -22,3 +22,10 @@ pilotage-scolaire-cssps-20260411/
 ├── outputs/       # Exports, rapports, captures
 └── README.md
 ```
+
+## Développement
+
+```bash
+npm install
+npm run dev
+```
