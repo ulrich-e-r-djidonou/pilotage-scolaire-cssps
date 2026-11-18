@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 3
+    groups:
+      # Une PR par lot plutot qu'une par paquet (audit Fable52, G4).
+      mineures-et-correctifs:
+        update-types: ["minor", "patch"]
+      securite:
+        applies-to: security-updates
+        patterns: ["*"]
